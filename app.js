@@ -97,7 +97,7 @@ bcrypt.hash(password,salt, async (err,hash) =>{
   });
    let token = jwt.sign({email:email, userid:user._id},"shhh");
    res.cookie("token",token);
-   res.send("resgintered");
+   res.render("profile");
 })
  })
  
